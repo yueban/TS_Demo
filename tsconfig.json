@@ -3,7 +3,8 @@
         "target": "es5",
         "module": "amd",
         "sourceMap": true,
-        "noImplicitThis": true
+        "noImplicitThis": true,
+        "strictNullChecks": true
     },
     "exclude": [
         "node_modules",
