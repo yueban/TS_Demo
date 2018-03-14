@@ -43,11 +43,11 @@ onload = () => {
     let arr: any[] = ['s3', 2, true];
     log('any[]', arr);
 
-    log('function void', typeof testVoid());
-    let void1: void = null;
-    let void2: void = undefined;
-    log('void1', void1);
-    log('void2', void2);
+    // log('function void', typeof testVoid());
+    // let void1: void = null;
+    // let void2: void = undefined;
+    // log('void1', void1);
+    // log('void2', void2);
 
     let someValue1: any = 'this is a string';
     let someValue2: Object = 'this is a string';
@@ -75,5 +75,8 @@ function testVoid(): void {
 function log(key, value) {
     let log = document.createElement('p');
     log.innerHTML = key + ': ' + value;
-    document.getElementById('log').appendChild(log);
+    let logElem = document.getElementById('log');
+    if (logElem) {
+        logElem.appendChild(log);
+    }
 }
