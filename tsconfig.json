@@ -4,7 +4,8 @@
         "module": "amd",
         "sourceMap": true,
         "noImplicitThis": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        // "traceResolution": true,
     },
     "exclude": [
         "node_modules",
