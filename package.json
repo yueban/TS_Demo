@@ -11,10 +11,7 @@
     "author": "2gua",
     "license": "ISC",
     "dependencies": {
-
+        "requirejs": "^2.3.5"
     },
-    "devDependencies": {
-        "lite-server": "^2.3.0",
-        "concurrently": "^3.5.1"
-    }
+    "devDependencies": {}
 }
