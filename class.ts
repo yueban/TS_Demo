@@ -192,27 +192,27 @@
 // (<AccountingDepartment>department).generateReports(); // 错误: 方法在声明的抽象类中不存在
 
 
-class Greeter {
-    static standardGreeting = "Hello, there";
-    greeting: string;
-    greet() {
-        if (this.greeting) {
-            return "Hello, " + this.greeting;
-        }
-        else {
-            return Greeter.standardGreeting;
-        }
-    }
-}
+// class Greeter {
+//     static standardGreeting = "Hello, there";
+//     greeting: string;
+//     greet() {
+//         if (this.greeting) {
+//             return "Hello, " + this.greeting;
+//         }
+//         else {
+//             return Greeter.standardGreeting;
+//         }
+//     }
+// }
 
-let greeter1: Greeter;
-greeter1 = new Greeter();
-console.log(greeter1.greet());
+// let greeter1: Greeter;
+// greeter1 = new Greeter();
+// console.log(greeter1.greet());
 
-Greeter.standardGreeting = "Hey there!";
-// let greeterMaker = Greeter;
-let greeterMaker: typeof Greeter = Greeter;
-greeterMaker.standardGreeting = "Hey there!";
+// Greeter.standardGreeting = "Hey there!";
+// // let greeterMaker = Greeter;
+// let greeterMaker: typeof Greeter = Greeter;
+// greeterMaker.standardGreeting = "Hey there!";
 
-let greeter2: Greeter = new greeterMaker();
-console.log(greeter2.greet());
+// let greeter2: Greeter = new greeterMaker();
+// console.log(greeter2.greet());

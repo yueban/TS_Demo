@@ -5,6 +5,7 @@
         "sourceMap": true,
         "noImplicitThis": true,
         "strictNullChecks": true,
+        "experimentalDecorators": true,
         // "traceResolution": true,
     },
     "exclude": [
